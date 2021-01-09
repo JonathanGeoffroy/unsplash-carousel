@@ -1,0 +1,29 @@
+@import "./vars";
+
+.Carousel {
+  .Action {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $background;
+    color: $color;
+    padding: 0.5em;
+
+    align-items: center;
+
+    button {
+      display: block;
+      color: $color;
+      padding-right: 1em;
+      flex-shrink: 0;
+      font-size: 1em;
+    }
+
+    .timeline {
+      height: 0.5em;
+      border-radius: 4px;
+      background-color: rgba($color, 0.5);
+    }
+  }
+}

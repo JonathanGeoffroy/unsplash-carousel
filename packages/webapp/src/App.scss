@@ -4,6 +4,9 @@
   max-width: 900px;
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+
   button {
     border: none;
     background-color: transparent;
@@ -16,22 +19,36 @@
     }
   }
 
-  .selector-button {
-    position: absolute;
-    z-index: 1;
-
-    font-size: 4em;
-
-    color: $color;
-    background-color: $background;
-
-    top: calc(50% - 1em);
-
-    &.selector-button-previous {
-      left: 0;
+  .Carousel {
+    > *:not(:last-child) {
+      margin-bottom: 0.5em;
     }
-    &.selector-button-next {
-      right: 0;
+
+    .Carousel-container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+
+    .selector-button {
+      position: absolute;
+      display: block;
+      z-index: 1;
+
+      font-size: 4em;
+      line-height: 1em;
+
+      color: $color;
+      background-color: $background;
+
+      top: calc(50% - 0.5em);
+
+      &.selector-button-previous {
+        left: 0;
+      }
+      &.selector-button-next {
+        right: 0;
+      }
     }
   }
 }
