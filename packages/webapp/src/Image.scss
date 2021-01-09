@@ -1,0 +1,31 @@
+.Image {
+  width: 100%;
+  position: relative;
+
+  .Image-info {
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    background-color: rgba(black, 0.4);
+    color: rgba(white, 0.9);
+
+    .Image-top {
+      display: flex;
+      justify-content: space-between;
+
+      .Image-top-username {
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
