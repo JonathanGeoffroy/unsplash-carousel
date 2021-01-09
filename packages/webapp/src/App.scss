@@ -1,3 +1,37 @@
+@import "./vars";
+
 .App {
   max-width: 900px;
+  position: relative;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+    @media screen and (-ms-high-contrast: active) {
+      border: 2px solid currentcolor;
+    }
+  }
+
+  .selector-button {
+    position: absolute;
+    z-index: 1;
+
+    font-size: 4em;
+
+    color: $color;
+    background-color: $background;
+
+    top: calc(50% - 1em);
+
+    &.selector-button-previous {
+      left: 0;
+    }
+    &.selector-button-next {
+      right: 0;
+    }
+  }
 }

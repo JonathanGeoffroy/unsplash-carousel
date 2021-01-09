@@ -1,11 +1,17 @@
 import React from "react";
 import "./Thumbnails.scss";
 
-export default function Thumbnails({ data }) {
+export default function Thumbnails({ data, selectedIndex, onSelectionChange }) {
   return (
     <div className="thumbnails">
-      {data.map((item) => (
-        <img key={item.id} src={item.thumbnailUrl} alt="" />
+      {data.map((item, index) => (
+        <button key={item.id} onClick={() => onSelectionChange(index)}>
+          <img
+            className={index === selectedIndex ? "selected" : ""}
+            src={item.thumbnailUrl}
+            alt=""
+          />
+        </button>
       ))}
     </div>
   );

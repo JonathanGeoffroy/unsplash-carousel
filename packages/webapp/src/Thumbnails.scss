@@ -1,12 +1,31 @@
+@import "_vars.scss";
+
 .thumbnails {
   display: flex;
   flex-wrap: nowrap;
+
   width: 100%;
   height: 128px;
   overflow-x: auto;
 
-  > img {
+  > button {
+    flex-grow: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+
+  img {
+    display: block;
+    height: 100%;
     object-fit: cover;
-    padding: 1em;
+
+    &:not(.selected) {
+      opacity: 0.6;
+    }
   }
 }
