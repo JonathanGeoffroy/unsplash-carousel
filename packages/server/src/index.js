@@ -1,9 +1,12 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 1337;
 const host = "http://localhost";
 
 const data = require("../data.json");
+
+app.use(cors());
 
 app.get("/", (_, res) => {
   res.send(
