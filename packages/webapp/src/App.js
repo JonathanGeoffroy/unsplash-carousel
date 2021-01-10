@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import useAutoplay from "./hooks/useAutoplay";
 import useImages from "./hooks/useImages";
 
@@ -9,25 +9,8 @@ import Action from "./Action";
 import "./App.scss";
 
 function App() {
-  const [selectedIndex, setSelectedIndex, data] = useImages();
-
-  const handlePrevious = useCallback(() => {
-    if (!data) {
-      return;
-    }
-
-    setSelectedIndex(
-      (selectedIndex) => (data.length + selectedIndex - 1) % data.length
-    );
-  }, [data]);
-
-  const handleNext = useCallback(() => {
-    if (!data) {
-      return;
-    }
-
-    setSelectedIndex((selectedIndex) => (selectedIndex + 1) % data.length);
-  }, [data]);
+  const { state, handleGoto, handleNext, handlePrevious } = useImages();
+  const { data, selectedIndex } = state;
 
   const { time, ...player } = useAutoplay(selectedIndex, handleNext);
 
@@ -55,7 +38,7 @@ function App() {
           <Thumbnails
             data={data}
             selectedIndex={selectedIndex}
-            onSelectionChange={setSelectedIndex}
+            onSelectionChange={handleGoto}
           />
         </div>
       ) : (
