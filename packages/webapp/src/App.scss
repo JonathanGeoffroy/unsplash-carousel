@@ -1,54 +1,7 @@
-@import "./vars";
-
 .App {
-  max-width: 900px;
-  position: relative;
-
   display: flex;
-  flex-direction: column;
 
-  button {
-    border: none;
-    background-color: transparent;
-    font-family: inherit;
-    padding: 0;
-    cursor: pointer;
-
-    @media screen and (-ms-high-contrast: active) {
-      border: 2px solid currentcolor;
-    }
-  }
-
-  .Carousel {
-    > *:not(:last-child) {
-      margin-bottom: 0.5em;
-    }
-
-    .Carousel-container {
-      position: relative;
-      height: 100%;
-      width: 100%;
-    }
-
-    .selector-button {
-      position: absolute;
-      display: block;
-      z-index: 1;
-
-      font-size: 4em;
-      line-height: 1em;
-
-      color: $color;
-      background-color: $background;
-
-      top: calc(50% - 0.5em);
-
-      &.selector-button-previous {
-        left: 0;
-      }
-      &.selector-button-next {
-        right: 0;
-      }
-    }
+  > *:not(:last-child) {
+    margin-right: 1em;
   }
 }

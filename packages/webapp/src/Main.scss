@@ -1,0 +1,28 @@
+@import "./_vars.scss";
+
+.Carousel {
+  .Main {
+    position: relative;
+
+    .selector-button {
+      position: absolute;
+      display: block;
+      z-index: 1;
+
+      font-size: 4em;
+      line-height: 1em;
+
+      color: $color;
+      background-color: $background;
+
+      top: calc(50% - 0.5em);
+
+      &.selector-button-previous {
+        left: 0;
+      }
+      &.selector-button-next {
+        right: 0;
+      }
+    }
+  }
+}

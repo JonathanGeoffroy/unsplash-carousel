@@ -1,14 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+
+import { CarouselContext } from "./Carousel";
 
 import "./Image.scss";
 
-export default function Image({ url }) {
+export default function Image() {
+  const { state } = useContext(CarouselContext);
+  const url = state.initialized
+    ? state.data[state.selectedIndex].details
+    : null;
   const [image, setImage] = useState(null);
 
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then(setImage);
+    if (url) {
+      fetch(url)
+        .then((res) => res.json())
+        .then(setImage);
+    }
   }, [url]);
 
   return (

@@ -1,0 +1,25 @@
+@import "./vars";
+
+.Carousel {
+  max-width: 900px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+    @media screen and (-ms-high-contrast: active) {
+      border: 2px solid currentcolor;
+    }
+  }
+
+  > *:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+}
