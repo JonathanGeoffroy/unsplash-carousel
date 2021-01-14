@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Action from "./Action";
 import { CarouselContext } from "./Carousel";
-import useAutoplay from "./hooks/useAutoplay";
+import useAutoplay from "../hooks/useAutoplay";
 import Image from "./Image";
 
 import "./Main.scss";

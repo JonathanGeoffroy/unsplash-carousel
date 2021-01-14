@@ -1,5 +1,5 @@
 import React from "react";
-import useImages from "./hooks/useImages";
+import useImages from "../hooks/useImages";
 import Main from "./Main";
 import Thumbnails from "./Thumbnails";
 
