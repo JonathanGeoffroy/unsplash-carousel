@@ -30,7 +30,7 @@ app.get("/:id", (req, res) => {
   const { url, ...info } = image;
   res.send({
     ...info,
-    imageUrl: `${image.url}?w=900`,
+    imageUrl: `${url}?w=900`,
   });
 });
 
