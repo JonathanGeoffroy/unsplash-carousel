@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = process.env.PORT || 1337;
+const port = process.env.SERVER_PORT || 1337;
 const host = "http://localhost";
 
 const data = require("../data.json");
