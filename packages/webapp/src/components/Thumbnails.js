@@ -30,7 +30,7 @@ export default function Thumbnails() {
   }, [selectedIndex]);
 
   return (
-    <div className="thumbnails">
+    <div className="thumbnails" data-testid="thumbnails">
       {data.map((item, index) => (
         <button
           key={item.id}

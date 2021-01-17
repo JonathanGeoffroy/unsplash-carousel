@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Carousel when data is initialized 1`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              first username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            first description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #first, #key, #word
+          </div>
+        </div>
+        <img
+          alt="first description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Manage image selection button 1`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              second username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            second description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #second, #key, #word
+          </div>
+        </div>
+        <img
+          alt="second description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Manage image selection button 2`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              first username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            first description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #first, #key, #word
+          </div>
+        </div>
+        <img
+          alt="first description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Manage image selection button 3`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              second username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            second description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #second, #key, #word
+          </div>
+        </div>
+        <img
+          alt="second description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Manage image selection button 4`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              first username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            first description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #first, #key, #word
+          </div>
+        </div>
+        <img
+          alt="first description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Manage thumbnails selection 1`] = `
+<div>
+  <div
+    class="Carousel"
+  >
+    <div
+      class="Main"
+    >
+      <button
+        aria-label="Previous image"
+        class="selector-button selector-button-previous"
+      >
+        ‹
+      </button>
+      <div
+        class="Image"
+      >
+        <div
+          class="Image-info"
+        >
+          <div
+            class="Image-top"
+          >
+            <span
+              class="Image-top-username"
+            >
+              second username
+            </span>
+            <span>
+              01/01/2020
+            </span>
+          </div>
+          <div
+            class="Image-description"
+          >
+            second description
+          </div>
+          <div
+            class="Image-keywords"
+          >
+            #second, #key, #word
+          </div>
+        </div>
+        <img
+          alt="second description"
+          height="600"
+          width="900"
+        />
+      </div>
+      <button
+        aria-label="Next image"
+        class="selector-button selector-button-next"
+      >
+        ›
+      </button>
+      <div
+        class="Action"
+      >
+        <button>
+          ▶
+        </button>
+        <div
+          class="timeline"
+          style="width: 0%;"
+        />
+      </div>
+    </div>
+    <div
+      class="thumbnails"
+      data-testid="thumbnails"
+    >
+      <button>
+        <img
+          alt=""
+          class=""
+        />
+      </button>
+      <button>
+        <img
+          alt=""
+          class="selected"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

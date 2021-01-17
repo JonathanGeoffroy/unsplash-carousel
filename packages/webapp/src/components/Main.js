@@ -21,13 +21,15 @@ export default function Main() {
       <button
         className="selector-button selector-button-previous"
         onClick={handlePrevious}
+        aria-label="Previous image"
       >
         &#8249;
       </button>
-      <Image {...player} />
+      <Image />
       <button
         className="selector-button selector-button-next"
         onClick={handleNext}
+        aria-label="Next image"
       >
         &#8250;
       </button>

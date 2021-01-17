@@ -72,7 +72,7 @@ function reducer(state, action) {
       }
       return {
         ...state,
-        selectedIndex: action.payload % data.length,
+        selectedIndex: Math.min(action.payload, data.length - 1),
       };
     default:
       return state;
