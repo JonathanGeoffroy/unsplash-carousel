@@ -30,6 +30,6 @@ test("load image", async () => {
   expect(screen.getByText("first username")).toBeInTheDocument();
   expect(screen.getByText("first description")).toBeInTheDocument();
   expect(screen.getByAltText("first description")).toBeInTheDocument();
-  expect(screen.getByText("01/01/2020")).toBeInTheDocument();
+  expect(screen.getByText("1/1/2020")).toBeInTheDocument();
   expect(screen.getByText("#first, #key, #word")).toBeInTheDocument();
 });
