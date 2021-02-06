@@ -1,11 +1,11 @@
-import React from "react";
+import { createContext } from "react";
 import useImages from "../hooks/useImages";
 import Main from "./Main";
 import Thumbnails from "./Thumbnails";
 
 import "./Carousel.scss";
 
-export const CarouselContext = React.createContext();
+export const CarouselContext = createContext();
 
 function Carousel() {
   const images = useImages();

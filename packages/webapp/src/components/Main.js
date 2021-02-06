@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Action from "./Action";
 import { CarouselContext } from "./Carousel";
 import useAutoplay from "../hooks/useAutoplay";

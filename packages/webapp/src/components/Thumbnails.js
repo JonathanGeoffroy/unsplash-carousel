@@ -1,4 +1,4 @@
-import React, { useContext, useLayoutEffect, useRef } from "react";
+import { useContext, useLayoutEffect, useRef } from "react";
 import { CarouselContext } from "./Carousel";
 import "./Thumbnails.scss";
 

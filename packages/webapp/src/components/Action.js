@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Action.scss";
 
 export default function Action({ autoplay, onAutoplayChange, time = 0 }) {
