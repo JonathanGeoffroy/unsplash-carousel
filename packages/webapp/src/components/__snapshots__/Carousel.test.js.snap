@@ -58,8 +58,10 @@ exports[`Display Carousel when data is initialized 1`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"
@@ -146,8 +148,10 @@ exports[`Manage image selection button 1`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"
@@ -234,8 +238,10 @@ exports[`Manage image selection button 2`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"
@@ -322,8 +328,10 @@ exports[`Manage image selection button 3`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"
@@ -410,8 +418,10 @@ exports[`Manage image selection button 4`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"
@@ -498,8 +508,10 @@ exports[`Manage thumbnails selection 1`] = `
       <div
         class="Action"
       >
-        <button>
-          ▶
+        <button
+          aria-label="Play"
+        >
+          ■
         </button>
         <div
           class="timeline"

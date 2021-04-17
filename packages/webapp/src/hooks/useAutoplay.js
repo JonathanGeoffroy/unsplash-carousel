@@ -8,7 +8,7 @@ function disposableInterval(handler, timeout) {
 }
 
 export default function useAutoplay(current, handleChange) {
-  const [autoplay, setAutoplay] = useState(true);
+  const [autoplay, setAutoplay] = useState(false);
   const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {

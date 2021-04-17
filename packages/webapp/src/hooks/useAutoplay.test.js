@@ -16,8 +16,9 @@ afterEach(() => {
 describe("Autoplay change selected image", () => {
   test("Change image when autoplay is enabled", () => {
     const handleChange = jest.fn();
-    renderHook(() => useAutoplay(0, handleChange));
-    expect(handleChange).not.toHaveBeenCalled();
+    const hookMock = renderHook(() => useAutoplay(0, handleChange));
+
+    act(() => current(hookMock).onAutoplayChange(true));
 
     act(() => jest.runOnlyPendingTimers());
     expect(handleChange).toHaveBeenCalledTimes(1);
@@ -28,9 +29,8 @@ describe("Autoplay change selected image", () => {
 
   test("Don't change image when autoplay is disabled", () => {
     const handleChange = jest.fn();
-    const hookMock = renderHook(() => useAutoplay(0, handleChange));
+    renderHook(() => useAutoplay(0, handleChange));
 
-    act(() => current(hookMock).onAutoplayChange(false));
     act(() => jest.runOnlyPendingTimers());
     expect(handleChange).not.toHaveBeenCalled();
   });
@@ -38,6 +38,8 @@ describe("Autoplay change selected image", () => {
   test("Disable image change after disable autoplay", () => {
     const handleChange = jest.fn();
     const hookMock = renderHook(() => useAutoplay(0, handleChange));
+
+    act(() => current(hookMock).onAutoplayChange(true));
 
     act(() => jest.runOnlyPendingTimers());
     expect(handleChange).toHaveBeenCalledTimes(1);
@@ -65,6 +67,8 @@ describe("Autoplay change selected image", () => {
 
     const handleChange = jest.fn();
     const hookMock = renderHook(() => useAutoplay(selectedIndex, handleChange));
+
+    act(() => current(hookMock).onAutoplayChange(true));
 
     act(() => jest.advanceTimersByTime(DEFAULT_HANDLE_CHANGE_TIMER - 1));
     expect(handleChange).not.toHaveBeenCalled();

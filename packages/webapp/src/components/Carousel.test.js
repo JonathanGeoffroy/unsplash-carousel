@@ -5,7 +5,6 @@ import {
   waitFor,
   within,
 } from "@testing-library/react";
-import { act } from "@testing-library/react-hooks";
 import Carousel from "./Carousel";
 
 test("Display loading until data is initialized", () => {

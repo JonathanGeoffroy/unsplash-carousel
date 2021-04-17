@@ -6,7 +6,6 @@ export default function App() {
   return (
     <div className="App">
       <Carousel />
-      <Carousel />
     </div>
   );
 }

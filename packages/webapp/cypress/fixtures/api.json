@@ -1,0 +1,17 @@
+[
+  {
+    "id": "C69YOsY9lYg",
+    "thumbnailUrl": "https://fake-image.com/first",
+    "details": "http://localhost:1337/first"
+  },
+  {
+    "id": "4e9eeHdiBi0",
+    "thumbnailUrl": "https://fake-image.com/second",
+    "details": "http://localhost:1337/second"
+  },
+  {
+    "id": "-uzgaA9LfNw",
+    "thumbnailUrl": "https://fake-image.com/third",
+    "details": "http://localhost:1337/third"
+  }
+]

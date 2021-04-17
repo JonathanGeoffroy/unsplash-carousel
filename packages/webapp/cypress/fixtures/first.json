@@ -1,0 +1,9 @@
+{
+  "id": "firstId",
+  "imageUrl": "https://fake-image.com/first",
+  "username": "first username",
+  "description": "first description",
+  "date": "2020-01-01T00:00:00.0",
+  "views": 1337,
+  "keywords": ["first", "key", "word"]
+}
